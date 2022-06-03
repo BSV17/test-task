@@ -1,0 +1,41 @@
+.clients {
+  width: 16rem;
+  background-color: $white;
+  height: calc(100vh - #{$navigation-height} - #{$header-height});
+  border-right: 1px solid $lighter-grey;
+  border-left: 1px solid $lighter-grey;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+
+  &__list {
+    &-item {
+      a {
+        padding: 0.5rem;
+        line-height: 2.1875rem;
+        color: $grey;
+      }
+
+      &:nth-child(even) {
+        background-color: $light-grey;
+      }
+
+      &:hover,
+      &_selected {
+        z-index: 1000;
+        transform: scale(1.1);
+        background: $white;
+        font-size: 0.906rem;
+        padding-left: 0.6875rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        &::after {
+          content: "";
+          position: absolute;
+          border: 18px solid transparent;
+          border-left: 10px solid $white;
+          right: -28px;
+          top: -0.5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.header {
+  background-color: $dark-grey;
+  height: $header-height;
+  display: flex;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logout-link {
+    margin-left: auto;
+
+    a {
+      color: $light-grey;
+    }
+  }
+}

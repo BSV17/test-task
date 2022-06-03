@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__container">
+    <div class="header__logout-link">
+      <a href="#">Выход</a>
+    </div>
+  </div>
+</header>
+<div class="navigation">
+  <div class="container navigation__container">
+    <div class="navigation__search">
+      <h3 class="navigation__search-title">Клиенты</h3>
+      <form action="#" class="navigation__search-form">
+        <span class="material-icons">search</span>
+        <input type="text" class="navigation__search-input">
+      </form>
+    </div>
+    <nav class="navigation__list">
+      <a href="#" class="navigation__list-item navigation__list-item_active">Информация о клиенте</a>
+      <a href="#" class="navigation__list-item">История заказов</a>
+      <a href="#" class="navigation__list-item">История балансов</a>
+    </nav>
+  </div>
+</div>
+<main class="main">
+  <div class="container main__container">
+    <aside class="clients">
+      <ul class="clients__list">
+        <li class="clients__list-item"><a href="#">Brian Walker</a></li>
+        <li class="clients__list-item"><a href="#">Marsha Nichols</a></li>
+        <li class="clients__list-item clients__list-item_selected"><a href="#">Willie King</a></li>
+        <li class="clients__list-item"><a href="#">Carl Marshall</a></li>
+        <li class="clients__list-item"><a href="#">Isabella Hayes</a></li>
+        <li class="clients__list-item"><a href="#">Micheal Webb</a></li>
+        <li class="clients__list-item"><a href="#">Dan Green</a></li>
+        <li class="clients__list-item"><a href="#">Mathew lacobs</a></li>
+        <li class="clients__list-item"><a href="#">Lawrence White</a></li>
+        <li class="clients__list-item"><a href="#">Nora Wallace</a></li>
+        <li class="clients__list-item"><a href="#">David Ruiz</a></li>
+      </ul>
+    </aside>
+    <div class="client-info">
+      <div class="client-info__header">
+        <h3>Willie King</h3>
+        <h3>Баланс: 23 920 грн.</h3>
+      </div>
+      <div class="client-info__cards">
+        <div class="client-info__main-card">
+          <div class="client-info__card-item">
+            <h3>Контакты</h3>
+            <div class="client-info__card-data">
+              <div class="client-info__card-data-name">
+                Логин
+              </div>
+              <div class="client-info__card-data-info">
+                wking
+              </div>
+              <span class="material-icons">drive_file_rename_outline</span>
+            </div>
+            <div class="client-info__card-data">
+              <div class="client-info__card-data-name">
+                Email
+              </div>
+              <div class="client-info__card-data-info">
+                nickmakusev@gmail.com
+              </div>
+              <span class="material-icons">drive_file_rename_outline</span>
+            </div>
+            <div class="client-info__card-data">
+              <div class="client-info__card-data-name">
+                Телефон 1
+              </div>
+              <div class="client-info__card-data-info">
+                (063)-840-41-65
+              </div>
+              <span class="material-icons">drive_file_rename_outline</span>
+            </div>
+            <div class="client-info__card-data">
+              <div class="client-info__card-data-name">
+                Телефон 2
+              </div>
+              <div class="client-info__card-data-info client-info__card-data-info_empty">
+                не задан
+              </div>
+              <span class="material-icons">drive_file_rename_outline</span>
+            </div>
+          </div>
+        </div>
+        <div class="client-info__secondary-cards">
+          <div class="client-info__card-item">
+            <h3>Адрес</h3>
+            <div class="client-info__card-data">
+              <div class="client-info__card-data-name">
+                Город
+              </div>
+              <div class="client-info__card-data-info">
+                Одесса
+              </div>
+              <span class="material-icons">drive_file_rename_outline</span>
+            </div>
+            <div class="client-info__card-data">
+              <div class="client-info__card-data-name">
+                Адрес
+              </div>
+              <div class="client-info__card-data-info">
+                Мачтовая 17 оф.4
+              </div>
+              <span class="material-icons">drive_file_rename_outline</span>
+            </div>
+          </div>
+          <div class="client-info__card-item">
+            <h3>Скидки</h3>
+            <div class="client-info__card-data">
+              <div class="client-info__card-data-name">
+                Скидка
+              </div>
+              <div class="client-info__card-data-info">
+                5%
+              </div>
+            </div>
+            <div class="client-info__card-data">
+              <div class="client-info__card-data-name">
+                Колонка
+              </div>
+              <div class="client-info__card-data-info">
+                3
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="client-info__controls">
+        <div>
+          <input type="checkbox" id="access" name="access">
+          <label for="access">Доступ в Б2Б</label>
+        </div>
+        <button>Отправить письмо</button>
+        <button>Заблокировать</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

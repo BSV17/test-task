@@ -1,0 +1,87 @@
+.client-info {
+  width: calc(100% - 16rem);
+  padding: 2rem 0 2rem 2rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+
+  &__cards {
+    display: flex;
+  }
+
+  &__main-card {
+    width: 50%;
+    margin-right: 2rem;
+  }
+
+  &__secondary-cards {
+    width: 50%;
+  }
+
+  &__card-item {
+    background-color: $white;
+    border: 1px solid $lighter-grey;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__card-data {
+    display: flex;
+    align-items: center;
+    margin-top: 0.75rem;
+    line-height: 1.5rem;
+
+    &-name {
+      min-width: 6rem;
+    }
+
+    &-info {
+      font-weight: bold;
+
+      &_empty {
+        font-weight: 500;
+        color: $lighter-grey;
+      }
+
+      &:hover {
+        & + span {
+          display: flex;
+        }
+      }
+    }
+
+    span {
+      margin-left: 0.5rem;
+      display: none;
+    }
+  }
+
+  &__controls {
+    background-color: $white;
+    border: 1px solid $lighter-grey;
+    padding: 1rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+
+    & > * {
+      &:not(:first-child) {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  & > * {
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+}
